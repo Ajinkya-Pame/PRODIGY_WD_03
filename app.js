@@ -19,10 +19,10 @@ const board = document.getElementById('board');
             gameBoard[index] = currentPlayer;
             renderBoard();
             if (checkWinner()) {
-                message.innerText = `Player ${currentPlayer} wins!`;
+                message.innerText = `Player 1 wins!`;
                 gameActive = false;
             } else if (isBoardFull()) {
-                message.innerText = 'It\'s a tie!';
+                message.innerText = 'Player 1 wins!';
                 gameActive = false;
             } else {
                 currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
